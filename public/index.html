@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script
+      type="text/javascript"
+      src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"
+    ></script>
+    <link rel="stylesheet" href="../src/style.css" />
+    <script src="../src/heap.js"></script>
+    <script src="../src/script.js" type="module"></script>
+    <title>💸 Cashflow Settlement Utitlity</title>
+  </head>
+  <body>
+    <!-- Canvas -->
+    <canvas class="orb-canvas"></canvas>
+    <!-- Overlay -->
+    <div class="overlay">
+      <!-- Overlay inner wrapper -->
+      <div class="container">
+        <div class="overlay__inner">
+          <!-- Title -->
+          <h1 class="overlay__title">CASHFLOW MINIMIZATION 💸</h1>
+          <!-- Description -->
+          <p class="overlay__description">
+            Emulating cashflow among people in a group and minimizing the number
+            of transactions taking place among them in the most optimized
+            fashion. This is done by implementing Heap data structure.
+            <br /><strong>Try it out for yourself! 👇</strong>
+          </p>
+          <!-- Buttons -->
+          <div class="overlay__btns">
+            <button
+              class="overlay__btn overlay__btn--transparent"
+              id="generate_button"
+            >
+              💡 Get a New Problem
+            </button>
+            <button
+              class="overlay__btn overlay__btn--transparent"
+              id="solve_button"
+            >
+              ✔ Solve Problem
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="
+            row
+            d-md-flex
+            flex-row
+            justify-content-md-center
+            align-items-md-center
+          "
+        >
+          <div class="col-sm-12 col-lg-6">
+            <div
+              class="card"
+              style="
+                margin-right: 10px;
+                margin-top: 20px;
+                min-height: 300px;
+                border-radius: 15px;
+                box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+                  rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+                border-style: none;
+                background-color: #ffffe087;
+              "
+            >
+              <div class="card-body" style="height: 400px">
+                <div id="mynetwork"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-lg-6">
+            <div
+              class="card"
+              style="
+                margin-right: 10px;
+                margin-top: 20px;
+                min-height: 300px;
+
+                border-radius: 15px;
+                box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+                  rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+                background-color: #ffffe087;
+              "
+            >
+              <div class="card-body" style="height: 400px">
+                <span id="init_msg">
+                  <p
+                    style="
+                      font-weight: 300;
+                      text-align: center;
+                      margin-top: 8rem;
+                    "
+                  >
+                    👆 Click on Solve Problem button
+                  </p>
+                </span>
+                <div id="mynetwork2"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
