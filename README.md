@@ -40,6 +40,12 @@
 
 
 <!-- ABOUT THE PROJECT -->
+## About The Project
+
+[![Product Name Screen Shot][product-screenshot]](https://cashflow-minimization.herokuapp.com/)
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
 ### Built With
 
 ## Tech Stack
