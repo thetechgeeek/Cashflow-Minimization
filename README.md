@@ -50,9 +50,7 @@
 
 ## Tech Stack
 
-**Client:** React, Context-API, Bootstrap
-**Server:** Node.js, Express
-**Database:** MongoDB
+**Client:** HTML/CSS, Javascript, Bootstrap
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
